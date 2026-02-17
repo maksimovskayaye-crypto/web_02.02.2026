@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <text>Заполните обязательные поля, чтобы добавить данные в таблицу</text>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <br/>
+        <br/>
+        <text>Тип камушков:</text>
+        <select>
+            <option>сапфиры</option>
+            <option>рубины</option>
+            <option>алмазы</option>
+            <option>изумруды</option>
+            <option>топазы</option>
+            <option>опалы</option>
+        </select>
+        <br/>
+        <br/>
+        <text>Год:</text>
+        <input type="date" />&#9989
+        <br/>
+        <br/>
+        <text>Количество:</text>
+        <input type="text" />&#10060
+        <br/>
+        <br/>
+        <button>Отправить</button>
+        <br/>
+        <br/>
+        <p style="text-align: center;">Добыча драгоценных камней</p>
+        <table border="1" width="90%">
+            <tr>
+                <th colspan="2" rowspan="2" style="text-align: center";>Камушек</th>
+                <th colspan="3" style="text-align: center";>Год</th>
+            </tr>
+            <tr>
+                <th style="text-align: center";>2010</th>
+                <th style="text-align: center";>2012</th>
+                <th style="text-align: center";>2014</th>
+            </tr>
+            <tr>
+                <td colspan="2">Сапфиры</td>
+                <td rowspan="2">1483</td>
+                <td>4532</td>
+                <td>6743</td>
+            </tr>
+            <tr>
+                <td colspan="2">Рубины</td>
+                <td>3835</td>
+                <td>7482</td>
+            </tr>
+            <tr>
+                <td colspan="2">Алмазы</td>
+                <td>683</td>
+                <td colspan="2" style="text-align: center;">238</td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    Итого:много миллионов
+                <ol type="I">
+                    <li> Итого по видам драгоценных камней: много тысяч</li>
+                    <ul>
+                        <li><a href=https://jhcac.com>Сапфиров</a> немыслимое количество</li>
+                        <li>Но <a href="https://jhcac.com">рубинов</a> под конец всё же больше</li>
+                    </ul>
+                    <li> Итого по полудрагоценным камням</li>
+                    <ul>
+                        <li><a href=https://jhcac.com>Изумрудов</a> 0</li>
+                        <li><a href=https://jhcac.com>Топазов</a> 0</li>
+                        <li><a href=https://jhcac.com>Опалов</a> тоже 0</li>
+                    </ul>
+                </ol>
+                </td>                
+            </tr>
+        </table>
+    </body>
+</html>
