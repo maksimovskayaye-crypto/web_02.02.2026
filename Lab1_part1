@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<link rel="icon" href="red cross.png">
+<head>
+    <title>Список дел</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>Список дел</h1>
+    <br />
+    <form>
+        <input type="text" placeholder="Новый элемент списка">
+        <button>Создать</button>
+        <button>Очистить всё</button>
+    <br/>
+    <ol>
+        <li><input type="checkbox"/>Почесать кошку <time datetime="2023-08-24">от 24.08.2023</time><button aria-label="Delete" onclick="closeFunction()">&#10060;</button></li>
+        <li><input type="checkbox"/>Полить картошку <time datetime="2022-05-04">от 04.05.2022</time><button aria-label="Delete" onclick="closeFunction()">&#10060;</button></li>
+        <li><input type="checkbox"/>Сложить в лукошко <time datetime="2022-05-14">от 14.05.2022</time><button aria-label="Delete" onclick="closeFunction()">&#10060;</button></li>
+    </ol>
+
+    <footer>
+        <hr>
+        Copyright&copy;
+    </footer>
+
+</body>
+
+</html>
