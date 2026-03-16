@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Список дел</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+
+    <div id="cleared" class="anchor"></div>
+
+    <div class="todo-app">
+      <div class="header">
+        <img class="logo" src="logo.png"></img>
+        <h1 class="title">Список дел</h1>
+      </div>
+      
+
+      <div class="input-row">
+        <input class="input" type="text" placeholder="Новый элемент списка">
+        <div class="controls">
+          <button type="button" class="btn btn-primary">Создать</button>
+          <a href="#cleared" class="btn btn-ghost">Очистить всё</a>
+        </div>
+      </div>
+
+      <div class="list-wrap">
+        <ul class="todo-list">
+          <li class="todo-item">
+            <div>
+              <input class="chk" type="checkbox">
+            </div>
+            <div class="content">
+              <div class="task-title">Почесать кошку</div>
+              <div class="task-date">от 14.08.2023</div>
+            </div>
+            <button class="del" type="button">×</button>
+          </li>
+
+          <li class="todo-item">
+            <div>
+              <input class="chk" type="checkbox">
+            </div>
+            <div class="content">
+              <div class="task-title">Полить картошку</div>
+              <div class="task-date">от 04.05.2022</div>
+            </div>
+            <button class="del" type="button">×</button>
+          </li>
+
+          <li class="todo-item">
+            <div>
+              <input class="chk" type="checkbox">
+            </div>
+            <div class="content">
+              <div class="task-title">Сложить в лукошко</div>
+              <div class="task-date">от 19.05.2022</div>
+            </div>
+            <button class="del" type="button">×</button>
+          </li>
+
+          <li class="todo-item">
+            <div>
+                <input class="chk" type="checkbox">
+            </div>
+            <div class="content">
+                <div class="task-title">Посмотреть в окошко !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</div>
+                <div class="task-date">от 01.01.2024</div>
+            </div>
+            <button class="del" type="button">×</button>
+          </li>
+
+          <li class="todo-item">
+            <div>
+                <input class="chk" type="checkbox">
+            </div>
+            <div class="content">
+                <div class="task-title">Подремать немножко</div>
+                <div class="task-date">от 02.02.2024</div>
+            </div>
+            <button class="del" type="button">×</button>
+          </li>
+        </ul>
+
+        <div class="empty">Не найдено ни одного дела</div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <p>Copyright ©</p>
+    </footer>
+  </div>
+</body>
+</html>
