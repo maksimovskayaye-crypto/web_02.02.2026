@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Расширенный счётчик</title>
+<style>
+    body { font-family: Arial, sans-serif; }
+    #output { font-size: 22px; margin-top: 15px; white-space: pre-line; }
+    button { margin-right: 10px; }
+</style>
+</head>
+<body>
+
+<h2>Счётчик с методами start / pause / stop</h2>
+
+Введите начальное число:
+<input type="number" id="inputN" value="10" min="0">
+
+<button onclick="initCounter()">Новый счётчик</button>
+<button onclick="counterObj?.start()">Старт</button>
+<button onclick="counterObj?.pause()">Пауза</button>
+<button onclick="counterObj?.stop()">Стоп</button>
+
+<div id="output"></div>
+
+<script src="Task1.2.js"></script>
+</body>
+</html>
