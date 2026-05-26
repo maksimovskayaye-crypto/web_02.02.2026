@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style_2.2.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+     <menu class="menu">
+            <div class="logo">
+                <span class="logo_travel">Travel</span><span class="logo_world">World</span> 
+            </div>
+            <nav class="navigation">
+                <a href="#about">О нас</a>
+                <a href="#directions">Направления</a>
+                <a href="#tours">Туры</a>
+                <a href="#feedback">Отзывы</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+        </menu>
+    <header>
+        <h1>Откройте мир с TravelWorld</h1>
+        <p>Путешествия, которые вы никогда не забудете</p>
+        <a href="#tours">
+            <button >Выбрать тур</button>
+        </a>        
+    </header>
+    <main>
+        <div class="about" id="about">
+            <h2>О нашем агентстве</h2>
+            <div class="about_title">
+                <div class="about_text">
+                    <h3>Мы создаем незабываемые впечатления</h3>
+                    <p>TravelWorld - это команда профессиональных путешественников, которая уже более 15 лет помогает открывать для себя новые страны и культуры. Мы тщательно птбираем каждый тур и направление, чтобы обеспечить вам максимальных комфорт и безопасность во время путешествия</p>
+                    <p>Наша философия - индивидуальных подход к каждому клиенту. Мы не просто продаем туры, мы создаем уникальные маршруты, которые соответствуют вашим интересам, бюджету и предпочтениям.</p>
+                    <a href="#contacts">
+                        <button>Связаться с нами</button>
+                    </a>
+                </div>
+                <div class="about_img">
+                    <img src="./img_laba2.2/01.jpg" alt="about agency">
+                </div>
+            </div>
+        </div>
+        <div class="best_offer">
+            <h2>Наши лучшие предложения</h2>
+            <div class="offer_img">
+                <img src="./img_laba2.2/02.jpg" alt="our best offers">
+                <div class="offer_caption">
+                    <h3>Эдинбург, Шотландия</h3>
+                    <p>Столица Шотландии не оставит равнодушными любителей средневековья</p>
+                </div>
+            </div>
+        </div>
+        <div class="directions" id="directions">
+            <h2>Популярные направления</h2>
+            <div class="directions_title">
+                <div class="directions_card">
+                    <img src="./img_laba2.2/03.jpg" alt="Budapest">
+                    <div class="directions_text">
+                        <h3>Будапешт, Венгрия</h3>
+                        <p>Будапешт - это мосты, дворцы и термальнрые купальни, многие из которых расположились в фантастичестки красивых зданиях (взять хотя бы Геллерт или Сечени)</p>
+                        <p class="cost">от $1200</p>
+                    </div>
+                </div>
+                <div class="directions_card">
+                    <img src="./img_laba2.2/04.jpg" alt="Paris">
+                    <div class="directions_text">
+                        <h3>Париж, Франция</h3>
+                        <p>Город любви, искусства и изысканной кухни Эйфелева башня, Лувр и уютное кафе</p>
+                        <p class="cost">от $950</p>
+                    </div>
+                </div>
+                <div class="directions_card">
+                    <img src="./img_laba2.2/05.jpg" alt="New-York">
+                    <div class="directions_text">
+                        <h3>Нью-Йорк, США</h3>
+                        <p>Город, который никогда не спит Таймс-сквер Центральный парк и Статуя Свободы</p>
+                        <p class="cost">от $1500</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tours" id="tours">
+            <h2>Наши туры</h2>
+            <div class="tours_title">
+                <div class="tours_card">
+                    <img src="./img_laba2.2/06.jpg" alt="Europe">
+                    <div class="tours_text">
+                        <div class="tours_text_txt">
+                            <h3>Гранд тур по Европе</h3>
+                            <p>14-дневный тур по 5 странам: Франция, Германия, Австрия, Италия и Швейцария. Включены все переезды, проживание в отелях 4* и экскурсии с профессиональными гидами</p>
+                        </div>
+                        <div class="buy">
+                            <p class="red_cost">от $2500</p>
+                            <button>Забронировать</button>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="tours_card">
+                    <img src="./img_laba2.2/07.jpg" alt="Brazil">
+                    <div class="tours_text">
+                        <div class="tours_text_txt">
+                            <h3>Рио-де-Жанейро, Бразилия</h3>
+                            <p>Скалистые горы, зелённые холмы и живописные лагуны создают захватывающие панорамы, которые хочется запомнить и фотографировать</p>
+                        </div>
+                        <div class="buy">
+                            <p class="red_cost">от $3200</p>
+                            <button>Забронировать</button>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="tours_card">
+                    <img src="./img_laba2.2/08.jpg" alt="Japan">
+                    <div class="tours_text">
+                        <div class="tours_text_txt">
+                            <h3>Япония: традиции и современность</h3>
+                            <p>12-дневный тур по Токио, Киото, Осака и Хиросима. Чайные церемонии, самурайские замки, суши-мастер-классы и высокоскоростные поезда</p>
+                        </div>
+                        <div class="buy">
+                            <p class="red_cost">от $2800</p>
+                            <button>Забронировать</button>
+                        </div>                        
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="feedback" id="feedback">
+            <h2>Отзывы наших клиентов</h2>
+            <div class="feedback_title">
+                <div class="feedback_card">
+                    <div class="fb_card_client">
+                        <img class="fb_img" src="./img_laba2.2/face1.jpg" alt="Maria Ivanova">
+                        <div class="fb_card_client_name">
+                            <p class="name">Мария Иванова</p>
+                            <p class="date">Тур по Италии, май 2025</p>
+                        </div>                        
+                    </div>
+                    <div class="quote">
+                        <p>"Это было самое потрясающее путешествие в моей жизни! Все было организовано на высшем уровне - трансферы, экскурсии, отели. Особенно понравился гид в Риме, который показал нам город с неожиданной стороны."</p>
+                    </div>
+                </div>
+                <div class="feedback_card">
+                    <div class="fb_card_client">
+                        <img class="fb_img" src="./img_laba2.2/face2.jpg" alt="Aleksei Petrov">
+                        <div class="fb_card_client_name">
+                            <p class="name">Алексей Петров</p>
+                            <p class="date">Отдых на Мальдивах, январь 2025</p>
+                        </div>                        
+                    </div>
+                    <div class="quote">
+                        <p>"Спасибо TravelWorld за идеально организованный отдых. Все прошло без единой проблемы, от встречи в аэропорту до обратного вылета. Отель превзошел все ожидания, а дайвинг был просто незабываемым!"</p>
+                    </div>
+                </div>
+                <div class="feedback_card">
+                    <div class="fb_card_client">
+                        <img class="fb_img" src="./img_laba2.2/face3.jpg" alt="Elena Smirnova">
+                        <div class="fb_card_client_name">
+                            <p class="name">Елена Смирнова</p>
+                            <p class="date">Экскурсионный тур по Японии, апрель 2025</p>
+                        </div>                        
+                    </div>
+                    <div class="quote">
+                        <p>"Я давно мечтала о поездке в Японию, и TravelWorld сделали эту мечту реальностью. Программа была насыщенной, но без спешки. Особенно запомнилось цветение сакуры в Киото. Обязательно обращусь снова!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="moments">
+            <h2>Наши моменты</h2>
+            <div class="moments_container">
+                <div class="moments_track">
+                    <img class="mm_img" src="./img_laba2.2/moment1.jpg" alt="moment1">
+                    <img class="mm_img" src="./img_laba2.2/moment2.jpg" alt="moment2">
+                    <img class="mm_img" src="./img_laba2.2/moment3.jpg" alt="moment3">
+                    <img class="mm_img" src="./img_laba2.2/moment4.jpg" alt="moment4">
+                    <img class="mm_img" src="./img_laba2.2/moment5.jpg" alt="moment5">
+                    <img class="mm_img" src="./img_laba2.2/moment6.jpg" alt="moment6">
+                </div>
+            </div>            
+        </div>
+        <div class="faq">
+            <h2>Часто задаваемые вопросы</h2>
+            <div class="spoiler">
+                <details>
+                    <summary>Как забронировать тур?</summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum erat enim, ut gravida orci condimentum sit amet. Integer lacinia semper velit nec placerat. Pellentesque iaculis, nisi in auctor consectetur, justo ex dictum lorem, quis cursus mauris nunc quis nunc. Quisque pellentesque sem ac nulla ultrices placerat. Nam sagittis bibendum lobortis. Nulla facilisi. Vestibulum faucibus lacus ut dolor auctor, a accumsan quam maximus. In sit amet malesuada massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur fermentum feugiat libero, non fermentum nibh. Cras ultrices, sapien ut varius ultrices, enim felis faucibus felis, vitae volutpat urna quam ut tortor. Nullam et porta turpis. Duis sit amet leo in risus venenatis tempus. Vivamus porta ac erat nec hendrerit. Proin vel vehicula ipsum.
+                    </p>
+                </details>
+                <details>
+                    <summary>Какие документы нужны для путешествия?</summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum erat enim, ut gravida orci condimentum sit amet. Integer lacinia semper velit nec placerat. Pellentesque iaculis, nisi in auctor consectetur, justo ex dictum lorem, quis cursus mauris nunc quis nunc. Quisque pellentesque sem ac nulla ultrices placerat. Nam sagittis bibendum lobortis. Nulla facilisi. Vestibulum faucibus lacus ut dolor auctor, a accumsan quam maximus. In sit amet malesuada massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur fermentum feugiat libero, non fermentum nibh. Cras ultrices, sapien ut varius ultrices, enim felis faucibus felis, vitae volutpat urna quam ut tortor. Nullam et porta turpis. Duis sit amet leo in risus venenatis tempus. Vivamus porta ac erat nec hendrerit. Proin vel vehicula ipsum.
+                    </p>
+                </details>
+                <details>
+                    <summary>Есть ли у вас страховка?</summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum erat enim, ut gravida orci condimentum sit amet. Integer lacinia semper velit nec placerat. Pellentesque iaculis, nisi in auctor consectetur, justo ex dictum lorem, quis cursus mauris nunc quis nunc. Quisque pellentesque sem ac nulla ultrices placerat. Nam sagittis bibendum lobortis. Nulla facilisi. Vestibulum faucibus lacus ut dolor auctor, a accumsan quam maximus. In sit amet malesuada massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur fermentum feugiat libero, non fermentum nibh. Cras ultrices, sapien ut varius ultrices, enim felis faucibus felis, vitae volutpat urna quam ut tortor. Nullam et porta turpis. Duis sit amet leo in risus venenatis tempus. Vivamus porta ac erat nec hendrerit. Proin vel vehicula ipsum.
+                    </p>
+                </details>
+                <details>
+                    <summary>Можно ли изменить дату поездки после бронирования?</summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum erat enim, ut gravida orci condimentum sit amet. Integer lacinia semper velit nec placerat. Pellentesque iaculis, nisi in auctor consectetur, justo ex dictum lorem, quis cursus mauris nunc quis nunc. Quisque pellentesque sem ac nulla ultrices placerat. Nam sagittis bibendum lobortis. Nulla facilisi. Vestibulum faucibus lacus ut dolor auctor, a accumsan quam maximus. In sit amet malesuada massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur fermentum feugiat libero, non fermentum nibh. Cras ultrices, sapien ut varius ultrices, enim felis faucibus felis, vitae volutpat urna quam ut tortor. Nullam et porta turpis. Duis sit amet leo in risus venenatis tempus. Vivamus porta ac erat nec hendrerit. Proin vel vehicula ipsum.
+                    </p>
+                </details>
+                <details>
+                    <summary>Что делать, если тур отменяется?</summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum erat enim, ut gravida orci condimentum sit amet. Integer lacinia semper velit nec placerat. Pellentesque iaculis, nisi in auctor consectetur, justo ex dictum lorem, quis cursus mauris nunc quis nunc. Quisque pellentesque sem ac nulla ultrices placerat. Nam sagittis bibendum lobortis. Nulla facilisi. Vestibulum faucibus lacus ut dolor auctor, a accumsan quam maximus. In sit amet malesuada massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur fermentum feugiat libero, non fermentum nibh. Cras ultrices, sapien ut varius ultrices, enim felis faucibus felis, vitae volutpat urna quam ut tortor. Nullam et porta turpis. Duis sit amet leo in risus venenatis tempus. Vivamus porta ac erat nec hendrerit. Proin vel vehicula ipsum.
+                    </p>
+                </details>
+            </div>
+        </div>
+        <div class="contacts" id="contacts">
+            <h2>Наши контакты</h2>
+            <div class="contacts_title">
+                <div class="contacts_text">
+                    <h3>Свяжитесь с нами</h3>
+                    <p>г. Москва, ул. Тверская, д. 10, офис 45</p>
+                    <p>+7 (495) 123-45-67</p>
+                    <p><a href="mailto:info@travelworld.ru">info@travelworld.ru</a></p>
+                    <p>Пн-Пт 10:00 - 20:00<br/>
+                    Сб-Вс 11:00 - 18:00</p>
+                    <div class="contacts_btn">
+                        <button class="ct_btn" data-continent="Europe">Европа</button>
+                        <button class="ct_btn" data-continent="Asia">Азия</button>
+                        <button class="ct_btn" data-continent="America">Америка</button>
+                        <button class="ct_btn" data-continent="Africa">Африка</button>
+                    </div>                   
+                </div>
+                <div class="contacts_img">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <h3 class="footer">World</h3>
+            <p class="copyright">&#169; 2025 TravelWorld. Все права защищены.</p>
+        </footer>
+    </main>
+    <script>
+    const map = L.map('map').setView([20, 0], 2);
+    
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+    
+    const fallbackCoords = {
+        'Европа': [54.5260, 15.2551],
+        'Азия': [34.0479, 100.6197],
+        'Америка': [39.8283, -98.5795],
+        'Африка': [8.7832, 34.5085]
+    };
+    
+
+    function showCircleOnMap(lat, lon) {
+        map.eachLayer(function(layer) {
+            if (layer instanceof L.Circle) {
+                map.removeLayer(layer);
+            }
+        });
+        L.circle([lat, lon], { 
+            color: '#ff6b6b',
+            fillColor: '#ff6b6b',
+            fillOpacity: 0.2,
+            radius: 1500000 
+        }).addTo(map);
+        map.setView([lat, lon], 3);
+    }
+    
+
+    document.querySelectorAll('.ct_btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const continent = this.textContent;
+            
+            
+            const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(continent)}&format=json&limit=1`;
+            
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    if (data && data[0] && data[0].lat && data[0].lon) {
+                        const lat = parseFloat(data[0].lat);
+                        const lon = parseFloat(data[0].lon);
+                        showCircleOnMap(lat, lon);
+                    } else {
+                        const coords = fallbackCoords[continent];
+                        if (coords) showCircleOnMap(coords[0], coords[1]);
+                    }
+                })
+                .catch(error => {
+                    console.log('API недоступно, использую запасные координаты');
+                    const coords = fallbackCoords[continent];
+                    if (coords) showCircleOnMap(coords[0], coords[1]);
+                });
+        });
+    });
+</script>
+</body>
