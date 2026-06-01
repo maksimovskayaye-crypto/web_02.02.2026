@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🌤️ Прогноз погоды</title>
+  <link rel="stylesheet" href="laba10.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌤️ Прогноз погоды</h1>
+      <div class="location" id="location">
+        <span>📍 Определяем местоположение...</span>
+      </div>
+    </header>
+
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Поиск города" />
+      <button id="searchBtn">🔍 Найти</button>
+    </div>
+
+    <div class="toggle-view">
+      <button class="toggle-btn active" data-view="daily">📅 По дням</button>
+      <button class="toggle-btn" data-view="hourly">⏰ По часам</button>
+    </div>
+
+    <div id="message"></div>
+
+    <div class="carousel-wrapper">
+      <button class="nav-btn prev" id="prevBtn">❮</button>
+      <div class="carousel" id="carousel"></div>
+      <button class="nav-btn next" id="nextBtn">❯</button>
+    </div>
+
+    <div class="dots" id="dots"></div>
+
+    <footer>
+      Данные предоставлены <a href="https://open-meteo.com/" target="_blank">Open-Meteo</a> • 
+      Геолокация используется только для показа погоды
+    </footer>
+  </div>
+
+  <script src="laba10.js"></script>
+</body>
+</html>
